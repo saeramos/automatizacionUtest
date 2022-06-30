@@ -1,7 +1,9 @@
 package co.com.choucair.reto_Utest.tasks;
 
+import co.com.choucair.reto_Utest.userinterface.RegistroPage;
 import co.com.choucair.reto_Utest.userinterface.UtestUrl;
 import net.serenitybdd.screenplay.*;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
@@ -19,6 +21,8 @@ public class OpenUp implements Task {
     @Override
     @Step("The Utest page opens")
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo( Open.browserOn(utestUrl) );
+        actor.attemptsTo(
+                Open.browserOn(utestUrl)
+               );
     }
 }
