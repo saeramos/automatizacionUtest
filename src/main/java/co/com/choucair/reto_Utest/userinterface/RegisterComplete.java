@@ -6,6 +6,6 @@ import static net.serenitybdd.core.annotations.findby.By.xpath;
 
 public class RegisterComplete extends PageObject {
 
-    public static final Target LBL_WELCOME_MESSAGE= Target.the("Welcome message")
+    public static final Target L_WELCOME_MESSAGE= Target.the("Welcome message")
             .located(xpath("//div[@class='image-box-header']//h1"));
 }

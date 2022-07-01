@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.annotations.Subject;
 import net.serenitybdd.screenplay.questions.Text;
 
-import static co.com.choucair.reto_Utest.userinterface.RegisterComplete.LBL_WELCOME_MESSAGE;
+import static co.com.choucair.reto_Utest.userinterface.RegisterComplete.L_WELCOME_MESSAGE;
 
 @Subject("Get the welcome message to utest")
 public class ValidateMessage implements Question<Boolean>{
@@ -15,7 +15,7 @@ public class ValidateMessage implements Question<Boolean>{
         @Override
         public Boolean answeredBy(Actor actor) {
 
-            String message = Text.of(LBL_WELCOME_MESSAGE).viewedBy(actor).asString();
+            String message = Text.of(L_WELCOME_MESSAGE).viewedBy(actor).asString();
             return Constants.WELCOME_MESSAGE.getValue().equals(message);
 
         }
