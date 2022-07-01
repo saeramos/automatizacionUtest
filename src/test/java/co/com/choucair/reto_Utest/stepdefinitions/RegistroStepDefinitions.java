@@ -2,8 +2,8 @@ package co.com.choucair.reto_Utest.stepdefinitions;
 
 
 import co.com.choucair.reto_Utest.model.RegistroUtest;
+import co.com.choucair.reto_Utest.tasks.AccountRegister;
 import co.com.choucair.reto_Utest.tasks.OpenUp;
-import co.com.choucair.reto_Utest.tasks.Register;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -28,9 +28,14 @@ public class RegistroStepDefinitions {
         theActorCalled(actor).wasAbleTo(OpenUp.thePage());
     }
 
-    @When("^Enter the necessary data to proceed with the registration$")
-    public void enterTheNecessaryDataToProceedWithTheRegistration(List <RegistroUtest> dataRegistro){
-        theActorInTheSpotlight().attemptsTo(Register.Interaction(dataRegistro));
+    @When("^He enter the necessary data to proceed with the registration$")
+    public void enterTheNecessaryDataToProceedWithTheRegistration(List <RegistroUtest> dataRegistro) {
+        theActorInTheSpotlight().attemptsTo(
+                AccountRegister.FirstRegister(dataRegistro.get(0)),
+                AccountRegister.AddressInteraction(dataRegistro.get(0)),
+                AccountRegister.DeviceRegister(dataRegistro.get(0)),
+                AccountRegister.LastRegister(dataRegistro.get(0))
+                );
     }
 
     @Then("^validate successful registration message$")

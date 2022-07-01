@@ -1,5 +1,9 @@
 package co.com.choucair.reto_Utest.model;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
 public class RegistroUtest {
     private String first_name;
     private String last_name;
@@ -9,8 +13,10 @@ public class RegistroUtest {
     private String pais;
     private String password;
     private String confirm_password;
+    private List<String> idioms;
 
-    public RegistroUtest(String first_name, String last_name, String email, String city, String postalcode, String pais, String password, String confirm_password) {
+    public RegistroUtest(String first_name, String last_name, String email, String city, String postalcode, String pais, String password, String confirm_password, List<String> n) {
+
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
@@ -19,6 +25,8 @@ public class RegistroUtest {
         this.pais = pais;
         this.password = password;
         this.confirm_password = confirm_password;
+        this.idioms = n ;
+
     }
 
     public String getFirst_name() {
@@ -83,5 +91,13 @@ public class RegistroUtest {
 
     public void setConfirm_password(String confirm_password) {
         this.confirm_password = confirm_password;
+    }
+
+    public List<String> getIdioms() {
+        return idioms;
+    }
+
+    public void setIdioms(List<String> idioms) {
+        this.idioms = idioms;
     }
 }

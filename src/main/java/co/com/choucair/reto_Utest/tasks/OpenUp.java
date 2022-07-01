@@ -1,9 +1,7 @@
 package co.com.choucair.reto_Utest.tasks;
 
-import co.com.choucair.reto_Utest.userinterface.RegistroPage;
 import co.com.choucair.reto_Utest.userinterface.UtestUrl;
 import net.serenitybdd.screenplay.*;
-import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
