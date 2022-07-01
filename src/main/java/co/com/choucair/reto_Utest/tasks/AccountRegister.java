@@ -1,5 +1,6 @@
 package co.com.choucair.reto_Utest.tasks;
 
+import co.com.choucair.reto_Utest.model.Devices;
 import co.com.choucair.reto_Utest.model.RegistroUtest;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Tasks;
@@ -13,7 +14,7 @@ public class AccountRegister{
         return Tasks.instrumented(AddressRegister.class,dataForm);
     }
 
-    public static Performable DeviceRegister(RegistroUtest dataForm) {//Tercera intefaz de registro
+    public static Performable DeviceRegister(Devices dataForm) {//Tercera intefaz de registro
         return Tasks.instrumented(DeviceRegister.class,dataForm);
     }
 

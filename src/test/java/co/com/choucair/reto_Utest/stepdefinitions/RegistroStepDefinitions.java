@@ -2,6 +2,7 @@ package co.com.choucair.reto_Utest.stepdefinitions;
 
 
 import co.com.choucair.reto_Utest.exceptions.CreaterAccountFailed;
+import co.com.choucair.reto_Utest.model.Devices;
 import co.com.choucair.reto_Utest.model.RegistroUtest;
 import co.com.choucair.reto_Utest.questions.ValidateMessage;
 import co.com.choucair.reto_Utest.tasks.AccountRegister;
@@ -37,10 +38,17 @@ public class RegistroStepDefinitions {
     public void enterTheNecessaryDataToProceedWithTheRegistration(List <RegistroUtest> dataRegistro) throws InterruptedException {
         theActorInTheSpotlight().attemptsTo(
                 AccountRegister.FirstRegister(dataRegistro.get(0)),
-                AccountRegister.AddressInteraction(dataRegistro.get(0)),
-                AccountRegister.DeviceRegister(dataRegistro.get(0)),
-                AccountRegister.LastRegister(dataRegistro.get(0))
+                AccountRegister.AddressInteraction(dataRegistro.get(0))
                 );
+    }
+    @When("^Proceed to enter the device data in the registration form$")
+    public void proceedToEnterTheDeviceDataInTheRegistrationForm(List<Devices> device)  {
+        theActorInTheSpotlight().attemptsTo( AccountRegister.DeviceRegister(device.get(0)));
+    }
+
+    @When("^Enter the password for the user to register$")
+    public void enterThePasswordForTheUserToRegister(List<RegistroUtest> u) {
+        theActorInTheSpotlight().attemptsTo(AccountRegister.LastRegister(u.get(0)));
     }
 
     @Then("^validate successful registration message$")

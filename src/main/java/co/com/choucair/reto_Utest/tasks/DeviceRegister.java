@@ -1,7 +1,7 @@
 package co.com.choucair.reto_Utest.tasks;
 
 import co.com.choucair.reto_Utest.interactions.Click_web;
-import co.com.choucair.reto_Utest.model.RegistroUtest;
+import co.com.choucair.reto_Utest.model.Devices;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
@@ -13,9 +13,9 @@ import static co.com.choucair.reto_Utest.userinterface.RegisterThreePage.*;
 
 public class DeviceRegister implements Task {
 
-    private RegistroUtest datosRegistro;
+    private Devices datosRegistro;
 
-    public DeviceRegister(RegistroUtest datosRegistro) {
+    public DeviceRegister(Devices datosRegistro) {
         this.datosRegistro = datosRegistro;
     }
 
