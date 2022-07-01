@@ -26,5 +26,4 @@ public class Click_web  implements Performable {
             return Tasks.instrumented(Click_web.class, target);
         }
 
-
 }

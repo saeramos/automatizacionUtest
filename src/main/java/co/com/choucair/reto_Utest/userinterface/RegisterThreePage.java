@@ -2,7 +2,9 @@ package co.com.choucair.reto_Utest.userinterface;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
-import static net.serenitybdd.core.annotations.findby.By.xpath;
+
+
+import static net.serenitybdd.core.annotations.findby.By.*;
 
 
 
@@ -21,7 +23,9 @@ public class RegisterThreePage extends PageObject {
             .located(xpath("//div[@name='handsetMakerId']"));
 
     public static final Target MODEL = Target.the("Select your model of mobile")
-            .located(xpath("//div[@name='handsetModelId']"));
+            .located(name("handsetModelId"));
+    public static final Target MODEL_LIST = Target.the("Select your model of mobile")
+            .located(xpath("//input[@placeholder='Select a Model']"));
 
     public static final Target OPERATING_SYSTEM = Target.the("where we select the mobile operating system")
             .located(xpath("//div[@name='handsetOSId']"));

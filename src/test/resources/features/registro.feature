@@ -15,4 +15,4 @@
 
     Examples:
       | first_name  | last_name | email                | city     | postalcode | password       | computer  | version          | language | mobile | model         | system        |
-      | Sergio      |  Escobar  | saeramos@hotmail.com | Montería | 230003     | Choucair@2022* | Windows   | Windows 11 Home  | Spanish  | Apple  | iPhone 13 Pro | iOS 15.6 Beta |
+      | Sergio      |  Escobar  | prubeas9595@gmail.com | Montería | 230003     | Choucair@2022* | Windows   | Windows 10 Home  | Spanish  | Apple  | iPhone 13 Pro | iOS 15.6 Beta |

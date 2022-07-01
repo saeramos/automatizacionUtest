@@ -5,8 +5,12 @@ import co.com.choucair.reto_Utest.model.RegistroUtest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+import org.openqa.selenium.Keys;
 
 import static co.com.choucair.reto_Utest.userinterface.RegisterThreePage.*;
+
+
 public class DeviceRegister implements Task {
 
     private RegistroUtest datosRegistro;
@@ -31,7 +35,7 @@ public class DeviceRegister implements Task {
                 Click_web.onXpath(LIST_ELEMENT_SELECTION.of(datosRegistro.getMobile())),
 
                 Click.on(MODEL),
-                Click_web.onXpath(LIST_ELEMENT_SELECTION.of(datosRegistro.getModel())),
+                Enter.theValue(datosRegistro.getModel()).into(MODEL_LIST).thenHit(Keys.TAB),
 
                 Click.on(OPERATING_SYSTEM),
                 Click_web.onXpath(LIST_ELEMENT_SELECTION.of(datosRegistro.getSystem())),
