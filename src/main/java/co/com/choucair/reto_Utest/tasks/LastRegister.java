@@ -21,9 +21,9 @@ public class LastRegister implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
 
-                WaitUntil.the(INPUT_PASSWORD, isVisible()),
-                Enter.theValue(datosRegistro.getPassword()).into(INPUT_PASSWORD),
-                Enter.theValue(datosRegistro.getPassword()).into(INPUT_CONFIRM_PASSWORD),
+                WaitUntil.the(PASSWORD, isVisible()),
+                Enter.theValue(datosRegistro.getPassword()).into(PASSWORD),
+                Enter.theValue(datosRegistro.getPassword()).into(CONFIRM_PASSWORD),
                 Click.on(BOX_STAY_INFORMED),
                 Click.on(BOX_ACCEPT_TERM),
                 Click.on(BOX_ACCEPT_PRIVACY),

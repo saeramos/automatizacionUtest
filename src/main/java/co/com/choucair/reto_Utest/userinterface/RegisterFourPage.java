@@ -6,10 +6,10 @@ import static net.serenitybdd.core.annotations.findby.By.xpath;
 import static net.serenitybdd.core.annotations.findby.By.id;
 
 public class RegisterFourPage extends PageObject {
-    public static final Target INPUT_PASSWORD = Target.the("where we write the password")
+    public static final Target PASSWORD = Target.the("where we write the password")
             .located(id("password"));
 
-    public static final Target INPUT_CONFIRM_PASSWORD = Target.the("where we write the confirm password")
+    public static final Target CONFIRM_PASSWORD = Target.the("where we write the confirm password")
             .located(id("confirmPassword"));
 
     public static final Target BOX_STAY_INFORMED = Target.the("where we agree to stay informed")

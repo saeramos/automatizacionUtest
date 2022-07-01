@@ -15,8 +15,14 @@ public class RegistroUtest {
     private String confirm_password;
     private List<String> idioms;
 
-    public RegistroUtest(String first_name, String last_name, String email, String city, String postalcode, String pais, String password, String confirm_password, List<String> n) {
+    private String computer;
+    private String version;
+    private String language;
+    private String mobile;
+    private String model;
+    private String system;
 
+    public RegistroUtest(String first_name, String last_name, String email, String city, String postalcode, String pais, String password, String confirm_password, List<String> idioms, String computer, String version, String language, String mobile, String model, String system) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
@@ -25,8 +31,13 @@ public class RegistroUtest {
         this.pais = pais;
         this.password = password;
         this.confirm_password = confirm_password;
-        this.idioms = n ;
-
+        this.idioms = idioms;
+        this.computer = computer;
+        this.version = version;
+        this.language = language;
+        this.mobile = mobile;
+        this.model = model;
+        this.system = system;
     }
 
     public String getFirst_name() {
@@ -100,4 +111,54 @@ public class RegistroUtest {
     public void setIdioms(List<String> idioms) {
         this.idioms = idioms;
     }
+
+    public String getComputer() {
+        return computer;
+    }
+
+    public void setComputer(String computer) {
+        this.computer = computer;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getSystem() {
+        return system;
+    }
+
+    public void setSystem(String system) {
+        this.system = system;
+    }
 }
+
+
