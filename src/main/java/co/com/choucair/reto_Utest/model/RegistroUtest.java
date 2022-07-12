@@ -12,12 +12,7 @@ public class RegistroUtest {
     private String password;
     private List<String> idioms;
 
-    private String computer;
-    private String version;
-    private String language;
-    private String mobile;
-    private String model;
-    private String system;
+
 
     public RegistroUtest(String first_name, String last_name, String email, String city, String postalcode,  String password, List<String> idioms, String computer, String version, String language, String mobile, String model, String system) {
         this.first_name = first_name;
@@ -28,12 +23,6 @@ public class RegistroUtest {
         this.password = password;
 
         this.idioms = idioms;
-        this.computer = computer;
-        this.version = version;
-        this.language = language;
-        this.mobile = mobile;
-        this.model = model;
-        this.system = system;
     }
 
     public String getFirst_name() {
@@ -70,29 +59,6 @@ public class RegistroUtest {
         this.idioms = idioms;
     }
 
-    public String getComputer() {
-        return computer;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public String getLanguage() {
-        return language;
-    }
-
-    public String getMobile() {
-        return mobile;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getSystem() {
-        return system;
-    }
 
 
 }

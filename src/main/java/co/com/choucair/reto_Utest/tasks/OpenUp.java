@@ -9,8 +9,6 @@ public class OpenUp implements Task {
 
     private UtestUrl utestUrl;
 
-    public OpenUp() {}
-
     public static Performable thePage() {
         return Tasks.instrumented(OpenUp.class);
     }
