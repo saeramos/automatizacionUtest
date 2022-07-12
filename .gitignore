@@ -8,6 +8,12 @@ buildNumber.properties
 .idea
 *.iml
 .DS_Store
-
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+
+#Ignore Gradle GUI config
+gradle-app.setting
+#Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+#Cache of project
+.gradletasknamecache
