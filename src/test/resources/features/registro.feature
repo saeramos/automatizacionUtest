@@ -21,4 +21,4 @@
 
     Examples:
       | first_name  | last_name | email                | city     | postalcode | password       | computer  | version          | language | mobile | model         | system        |
-      | Sergio      |  Escobar  | pruebas929995@gmail.com | Monteria | 230003     | Choucair@2022* | Windows   | Windows 10 Home  | Spanish  | Apple  | iPhone 13 Pro | iOS 15.6 Beta |
+      | Sergio      |  Escobar  | pruebas939995@gmail.com | Monteria | 230003     | Choucair@2022* | Windows   | Windows 10 Home  | Spanish  | Apple  | iPhone 13 Pro | iOS 15.6 Beta |
